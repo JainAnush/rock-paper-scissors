@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1{
+          color:purple;
+      }
+      h2{
+        color:red;
+    }
+      #play{
+        color:blue;
+      }
+      #again{
+        color:red;
+      }
+    </style>
+    {% load static %}
+    
+  </head>
+  <body style="background-color:HoneyDew">
+      <center>
+        <h1 id="welcome">WELCOME TO THE ROCK PAPER SCISSORS GAME</h1>
+        <h1 id="choice">SELECT YOUR CHOICE</h1>
+        <h2 id="rule">ONE WHO WINS 3 ROUNDS FIRST WINS THE GAME</h2>
+        <div id="scores"></div>
+        <div id="yourchoice"></div>
+        <div id="compchoice"></div>
+        <div id="msg"></div>
+        <div id="finalresult"></div>
+        <input type="radio" id="rock" name="ch" value="1">ROCK
+        <input type="radio" id="paper" name="ch" value="2">PAPER
+        <input type="radio" id="scissors" name="ch" value="3">SCISSORS<br><br>
+        <button onclick="process()" id="play">LOCK YOUR CHOICE</button>
+        <button onclick="location.reload()" id="again">START OVER AGAIN</button>
+        
+      </center>
+      <script src="{% static "javascript/myscript.js" %}" type="text/javascript"></script>
+  </body>
+</html>
